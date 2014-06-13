@@ -1,0 +1,600 @@
+@charset "UTF-8";
+
+
+
+
+
+/*____Base___________________________________________________*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video
+{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+html,body {
+	/*background: #4b4b4d url("../img/accueil/pattern.png") repeat-y;
+	background-position: -50px 0px;*/
+	background-color: #4b4b4d;
+	font-family: 'Pompiere', 'cursive';
+	font-size: 23px;
+	color: #4b4b4d;
+	height: 100%;
+}
+
+
+h2,h3 {
+	font-family: 'florence', 'arial';
+	font-weight: 100;
+	font-size: 100px;
+	color: #77a35a;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size:100px;
+}
+
+h3 {
+	font-size: 75px;
+}
+
+p {
+	line-height: 34px;
+}
+
+#container{
+	background-color:#f9f7e8;
+	width: 1024px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+	height: 100%; /* CHANGE */
+}
+
+
+::selection {
+	background: #abc19d; /* Safari */
+	}
+::-moz-selection {
+	background: #abc19d; /* Firefox */
+}
+
+/*____HEADER____________________________________________________*/
+
+header	{
+	position: relative;
+	margin: 0 auto;
+	height: 100%;
+	width: 1024px;
+}
+
+header img, 
+header div {
+	position: absolute;
+}
+
+header h1 img {
+	z-index: 100;
+}
+
+header h1 img {
+
+	left: 29%;
+	top: -6.2%;
+	width:426px;
+}
+
+header .scroll {
+	left: 62%;
+	top: 61%;
+}
+header .headerBalcony {
+	left: 33.5%;
+	bottom: 111px;
+}
+
+header .headerPlatform {
+	left: -23.8%;
+	bottom: 0px;
+	z-index: 70;
+}
+
+.book {
+	position: absolute;
+	left: 21%;
+	top: 94.7%;
+	z-index: 40;
+}
+
+.timeline {
+	position: fixed;
+	left: 87%;
+	top: -5%;
+	z-index: 10000;
+	overflow: hidden;	
+	height: 775px;
+	width: 157px;
+}
+
+	.timeline .up {
+		z-index: 30;
+	}
+
+	.timeline .color {
+		z-index: 20;
+	}
+
+	.timeline .behind {
+		top:20.4%;
+	}	
+
+/*____Anim_Bâtiments______*/
+
+header .batimentD,
+header .batimentG{
+	z-index: 60;
+}
+
+header .batimentD {
+	right: -1px;
+	bottom: -355px;
+	background: url("../img/accueil/batimentDroit.jpg") no-repeat;
+	height: 869px;
+	width: 173px;
+}
+
+header .batimentG {
+	left: 0px;
+	background: url("../img/accueil/batimentGauche.jpg") no-repeat;
+	height: 1090px;
+	width: 59px;
+	background-size: auto;
+}
+
+header .batimentGB {
+	left: 113px;
+	background: url("../img/accueil/batimentGaucheB.png") no-repeat;
+	width: 111px;
+	height: 317px;
+	z-index: 60;
+}
+
+header .batimentGGB {
+	left: 175px;
+	background: url("../img/accueil/batimentGaucheGB.png") no-repeat;
+	width: 147px;
+	height: 283px;
+	z-index: 50;
+}
+
+header .batimentDB {
+	right: 65px;
+	background: url("../img/accueil/batimentDroitB.png") no-repeat;
+	width:252px;
+	height: 502px;
+	z-index: 50;
+	bottom: -65px;
+}
+
+/*____Anim_Nuages______*/
+
+.nuageG
+ {
+	z-index: 50;
+	left: 50px;
+}
+
+img.nuageG{
+-webkit-animation-name:nuageG;
+   -moz-animation-name:nuageG;
+    -ms-animation-name:nuageG;
+     -o-animation-name:nuageG;
+        animation-name:nuageG;
+-webkit-animation-duration:70s;
+   -moz-animation-duration:70s;
+    -ms-animation-duration:70s;
+     -o-animation-duration:70s;
+        animation-duration:70s;
+-webkit-animation-timing-function:linear;
+   -moz-animation-timing-function:linear;
+    -ms-animation-timing-function:linear;
+     -o-animation-timing-function:linear;
+        animation-timing-function:linear;
+-webkit-animation-delay:0s;
+   -moz-animation-delay:0s;
+    -ms-animation-delay:0s;
+     -o-animation-delay:0s;
+        animation-delay:0s;
+-webkit-animation-iteration-count:infinite;
+   -moz-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+     -o-animation-iteration-count:infinite;
+        animation-iteration-count:infinite;
+-webkit-animation-play-state:running;
+   -moz-animation-play-state:running;
+    -ms-animation-play-state:running;
+     -o-animation-play-state:running;
+        animation-play-state:running;
+}
+@-webkit-keyframes nuageG{
+0%   { left:150px; top:100px;}
+100% { left:1200px; top:100px;}
+}
+
+
+img.nuageD{
+-webkit-animation-name:nuageD;
+   -moz-animation-name:nuageD;
+    -ms-animation-name:nuageD;
+     -o-animation-name:nuageD;
+        animation-name:nuageD;
+-webkit-animation-duration:50s;
+   -moz-animation-duration:50s;
+    -ms-animation-duration:50s;
+     -o-animation-duration:50s;
+        animation-duration:50s;
+-webkit-animation-timing-function:linear;
+   -moz-animation-timing-function:linear;
+    -ms-animation-timing-function:linear;
+     -o-animation-timing-function:linear;
+        animation-timing-function:linear;
+-webkit-animation-delay:0s;
+   -moz-animation-delay:0s;
+    -ms-animation-delay:0s;
+     -o-animation-delay:0s;
+        animation-delay:0s;
+-webkit-animation-iteration-count:infinite;
+   -moz-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+     -o-animation-iteration-count:infinite;
+        animation-iteration-count:infinite;
+-webkit-animation-play-state:running;
+   -moz-animation-play-state:running;
+    -ms-animation-play-state:running;
+     -o-animation-play-state:running;
+        animation-play-state:running;
+}
+@-webkit-keyframes nuageD{
+0%   { right:-100px; top:300px;}
+100% { right:1200px; top:300px;}
+}
+
+/* NewsForm */
+
+
+/* formNews*/
+
+html,body {
+	/*background: #4b4b4d url("../img/accueil/pattern.png") repeat-y;
+	background-position: -50px 0px;*/
+	background-color: #4b4b4d;
+	font-family: 'Pompiere', 'cursive';
+	font-size: 23px;
+	color: #4b4b4d;
+	height: 100%;
+}
+.containerNews
+header	{
+	position: relative;
+	margin: 0 auto;
+	height: 100%;
+	width: 1024px;
+}
+
+
+
+.containerNews{
+	background-color:#f9f7e8;
+	width: 1024px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	z-index: 10;
+	height: 100%; /* CHANGE */
+}
+.formNews,
+.formBck {
+	position: absolute;
+	top: 215px;
+	margin-left: -203px;
+	left: 50%;
+}
+
+
+
+.containerNews .batimentGB {
+	left: 113px;
+	bottom: 0px;
+	background: url("../img/accueil/batimentGaucheB.png") no-repeat;
+	width: 111px;
+	height: 317px;
+	z-index: 60;
+}
+
+.containerNews .batimentGGB {
+	left: 175px;
+	bottom: -59px;
+	background: url("../img/accueil/batimentGaucheGB.png") no-repeat;
+	width: 147px;
+	height: 283px;
+	z-index: 50;
+}
+
+.txtNews h3 {
+	margin-top: -37px;
+}
+.txtNews {
+	width: 404px;
+	height: 141px;
+	display: block;
+	padding: 0px 45px 0px 38px;
+	position: absolute;
+	background: url("../img/accueil/txt2Paper.png")no-repeat;
+	z-index: 10;
+}
+/* FORM */
+.formNews form{
+	position: absolute;
+	margin-top: 170px;
+	margin-left: 31px;
+
+}
+
+.formNews input[type="text"] {
+	width: 328px;
+	height: 40px;
+	border-style: none; 
+		font-family: 'Pompiere',arial;
+	font-size: 20px;
+		padding-left: 12px;
+}
+
+.formNews input[type="text"]:focus {
+	/*outline-color: #77a35a;*/
+	outline: 0;
+	color: #3b3b3b;
+} 
+
+.formBck {
+height: 200px;
+width: 200px;}
+
+.radioTool  { border:0; } 
+
+.formNews input[type="submit"],
+.formBck a {
+	font-family: 'florence', 'arial';
+	font-size: 30px;
+	text-align: center;
+	text-transform: uppercase;
+	border: none;
+	background-color: #f9f7e8;
+	color: #77a35a;
+	margin-left: 114px;
+	position: absolute;
+	bottom: -42px;
+	left: 	0px;
+	z-index: 20;
+	padding: 0px 17px;
+	cursor: pointer;
+}
+
+.formBck a {
+	top: 154px;
+	text-decoration: none;
+	width: 225px;
+	margin-left: 90px;
+	height: 30px;
+}
+
+.formNews input[type="submit"]:hover,
+.formBck a:hover {
+	color: rgba(119,163,90,.8);
+}
+
+.formNews input[type="submit"]:active,
+.formBck a:active {
+	color: #5a8240;
+}
+
+.formNews input[type="submit"]:focus {
+	outline: 0;
+}
+
+span.lineSubmit {
+	width: 328px;
+	height: 100px;
+	border-top:2px solid #77a35a;
+	position: absolute; 
+	top: 116px;
+	left: 0px;
+	z-index: 10;
+}
+
+span.inscription {
+	top: 62px;
+}
+
+.formBck span.lineSubmit {
+	width: 368px;
+	left: 18px;
+	top: 169px;
+}
+
+
+/* Svg circles */
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+
+.ac-custom ul,
+.ac-custom ol {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.ac-custom li {
+	margin: 0 auto;
+	position: relative;
+	width: 130px;
+	float: left;
+	margin: 10px 0px 16px 0px;
+}
+
+.ac-custom li:first-child {
+	margin-left: 40px;
+}
+
+.ac-custom label {
+	display: inline-block;
+	position: relative;
+
+	padding: 0 0 0 30px;
+	vertical-align: top;
+	color: rgba(0,0,0,0.4);
+	cursor: default;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+
+.ac-custom input[type="radio"],
+.ac-custom label::before {
+	width: 20px;
+	height: 20px;
+	bottom: 5px;
+	left: 0;
+	margin-top: -25px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.ac-custom input[type="checkbox"],
+.ac-custom input[type="radio"] {
+	opacity: 0;
+	-webkit-appearance: none;
+	display: inline-block;
+	vertical-align: middle;
+	z-index: 100;
+}
+
+
+.ac-custom label::before {
+	content: '';
+	border: 3px solid #bbb;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.ac-radio label::before {
+	border-radius: 50%;
+}
+
+
+.ac-custom input[type="radio"]:checked + label {
+	color: #77a35a;
+} 
+
+
+.ac-custom input[type="radio"]:checked + label::before {
+	opacity: 0.8;
+border: 7px solid #77a35a;
+
+}
+
+
+/* CSS in PHP */
+.wrong {
+	 margin-top: 5px;
+    padding: 5px;
+    background-color: #F00;
+    border: 2px solid #666;
+    width: auto;
+    color: #000000;
+}
+
+
+.message h2 {
+	position: absolute;
+	font-size: 24px;
+	top: 0;
+	left: 0;
+	margin: 100px 0 0 100px;
+}
+.message h2 .greenMessage {
+	color: green;
+}
+.message h2 .redMessage {
+	color: red;
+}
+
+/*.ac-circle input[type="checkbox"],
+.ac-circle input[type="radio"],
+.ac-circle label::before {
+	width: 30px;
+	height: 30px;
+	margin-top: -15px;
+	left: 10px;
+	position: absolute;
+}*/
+
+/*.ac-circle label::before {
+	background-color: #fff;
+	border: none;
+}*/
+
+/*.ac-circle svg {
+	width: 70px;
+	height: 70px;
+	margin-top: -35px;
+	left: -10px;
+}
+
+.ac-circle svg path {
+	stroke-width: 5px;
+} */
+
+/**/
+/*
+.ac-custom svg {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	top: 50%;
+	margin-top: -20px;
+	left: 5px;
+	pointer-events: none;
+}
+
+.ac-custom svg path {
+	stroke: #fdfcd3;
+	stroke-width: 13px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	fill: none;
+}*/

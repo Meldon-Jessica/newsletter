@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css"/>
+    <link href='http://fonts.googleapis.com/css?family=Pompiere' rel='stylesheet' type='text/css'/>
+    <link rel="icon" type="image/png" href="img/accueil/favicon.png"/>
+
+        <title>Newsletter - Potager sur Balcon</title>
+</head>
+<body>
+
+<div class="containerNews">
+    <header>
+            <div id="top"></div>
+            <img class="nuageG"src="img/accueil/nuageG.png" alt="Nuage de gauche"/> 
+            <img class="nuageD"src="img/accueil/nuageD.png" alt="Nuage de droite"/> 
+            <div class="batimentD"></div>
+            <div class="batimentG"></div>
+            <div class="batimentDB"></div>
+            <div class="batimentGB" ></div> 
+            <div class="batimentGGB"></div>
+    </header> <!-- end header -->
+    <div class="formNews">
+        <div class="txtNews">
+            <h3>Newsletter</h3>
+            <p>Tu veux être informé de la sortie officielle de cette histoire? Inscris-toi à la newsletter!</p>
+        </div>
+        <form method="post" action="newsletter.php">
+        <input type="text" name="mail" size="25" placeholder="Adresse mail.." required /><br />
+        <div class="ac-custom ac-radio ac-fill" autocomplete="off">
+            <ul>
+                <li><input type="radio" id="r1" name="new" value="0" /><label for="r1">S'inscrire</label></li>
+                <li><input type="radio" id="r2" name="new" value="1" /><label for="r2">Se désinscrire</label></li>
+            </ul>
+        </div> <!-- end radioTool -->
+        <input type="submit" value="Envoyer" name="submit"/> <span class="lineSubmit"></span> 
+        </form>
+    </div> <!-- end formNews -->
+</div>
+
+</body>
+
+</html>

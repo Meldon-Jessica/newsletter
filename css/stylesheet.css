@@ -1,0 +1,11 @@
+@font-face {
+    font-family: 'florence';
+    src: url('../fonts/florence-regular.eot');
+    src: url('../fonts/florence-regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/florence-regular.woff') format('woff'),
+         url('../fonts/florence-regular.ttf') format('truetype'),
+         url('../fonts/florence-regular.svg#florence_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}

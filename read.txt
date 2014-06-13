@@ -1,0 +1,7 @@
+- changer les valeurs dans connexion.php
+- newsletter.php ligne 65:
+<a href="http://jessicameldon.be/sql/newsletter/desinscription.php?token='.$getToken['token'].'&email='.$userMail.'">ici</a>.';
+
+"http://jessicameldon.be/sql/newsletter/" soit tout se trouve là, soit tu modifies cette adresse à la ligne en question
+
+- finir le css pour les messages rendu -> style.css 542 à 554.
